@@ -3,7 +3,16 @@ layout: default
 title: Just Blog
 ---
 
-Just my little blog
+<p>
+  {% for post in site.posts %} 
+    <div class="blog_date">
+      <span>{{ post.date | date_to_string }}</span><br><br>
+    </div>
 
-To enable Disqus comments + badges for this site, [add it to your Disqus account](http://disqus.com/add/).
-
+    <h3><a href="./{{ post.url }}">{{ post.title }}</a></h3>
+    <p>
+      {{ post.content }}
+    </p>
+    <br>
+  {% endfor %}
+</p>

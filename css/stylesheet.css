@@ -26,7 +26,8 @@ html>body #wrapper {
 
 #header {
 	position: relative;
-	background: #FF6633;
+	/*background: #FF6633;*/
+  background: #1e1e1e;
 	height: 113px;
 }
 #header h1 {
@@ -41,7 +42,7 @@ html>body #wrapper {
 
 #navigation {
 	background: #232323;
-	border-bottom: 1px solid #171717;
+	/*border-bottom: 1px solid #171717;*/
 	margin: 0;
 	padding: 0.5em 0;
 	width: 100%;
@@ -94,7 +95,11 @@ html>body #content {
 	height: auto;
 	max-width: 430px;
 	min-height: 584px; /* (64+2*20+2)*6 - 2 - 2*25 */
-	background: #fff;
+	background: #1e1e1e;
+  color: #ddd;
+}
+#content a {
+  color: white;
 }
 #content :first-child {
 	margin-top: 0px;
@@ -109,12 +114,15 @@ html>body #content {
 	top: 0px;
 	left: 480px;
 	width: 270px;
-	background-color: #e8eaea;
+	/*background-color: #e8eaea;*/
+	background-color: #232323;
 	position: absolute;
 }
 #sidebar .item {
-	color: #5b5b5b;
-	border-bottom: 2px solid #fff;
+	/*color: #5b5b5b;*/
+	color: #e6e6e6;
+	/*border-bottom: 2px solid #fff;*/
+	border-bottom: 2px solid #1e1e1e;
 	padding: 20px;
 	min-height: 64px;
 }
@@ -124,11 +132,13 @@ html>body #content {
 #sidebar .item h4 {
 	margin-bottom: 1em;
 	font-size: 120%;
+  color: #ad0
 }
 #sidebar .item p {
 	font-size: 90%;
 }
 #sidebar .item a {
+  color: #ccf;
 	text-decoration: none;
 }		  
 #sidebar .item a:hover {
