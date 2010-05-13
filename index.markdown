@@ -2,17 +2,16 @@
 layout: default
 title: Just Blog
 ---
-
-<p>
-  {% for post in site.posts %} 
+{% for post in site.posts %} 
+  <div class="container">
     <div class="blog_date">
-      <span>{{ post.date | date_to_string }}</span><br><br>
+      <span>{{ post.date | date_to_string }}</span>
     </div>
-
-    <h3><a href="./{{ post.url }}">{{ post.title }}</a></h3>
-    <p>
-      {{ post.content }}
-    </p>
-    <br>
-  {% endfor %}
-</p>
+    <div class="blog_title">
+      <h3><a href="./{{ post.url }}">{{ post.title }}</a></h3>
+    </div>
+    <div class="blog_content">
+      {{ post.content | truncatewords:30 }}
+    </div>
+  </div>
+{% endfor %}

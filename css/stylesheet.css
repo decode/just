@@ -100,6 +100,10 @@ html>body #content {
 }
 #content a {
   color: white;
+	text-decoration: none;
+}
+#content a:hover {
+	text-decoration: underline;
 }
 #content :first-child {
 	margin-top: 0px;
@@ -134,6 +138,9 @@ html>body #content {
 	font-size: 120%;
   color: #ad0
 }
+#sidebar .item h4 a {
+  color: #ad0
+}
 #sidebar .item p {
 	font-size: 90%;
 }
@@ -144,7 +151,6 @@ html>body #content {
 #sidebar .item a:hover {
 	text-decoration: underline;
 }
-
 #footer {
 	position: relative;
 	margin: 0;
@@ -152,7 +158,8 @@ html>body #content {
 	min-height: 1em;
 	clear: both;
 	color: #b5b5b5;
-	background: #2E2E2E;
+	/*background: #2E2E2E;*/
+	background: #232323;
 }
 #footer * {
 	margin: 0;
@@ -174,3 +181,12 @@ html>body #content {
 	float: right;
 }
 
+.container {
+	border-bottom: 2px solid #232323;
+}
+.blog_date {
+  /*text-align: center;*/
+  color: #777;
+  padding: 0 0 15px 0px;
+  margin: 10;
+}
