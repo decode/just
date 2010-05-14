@@ -2,8 +2,8 @@
 layout: post
 title: Game and Tired
 categories:
-- sports
-- emotion
+  - sports
+  - emotion
 ---
 
 今天和喵咪去馆里打球了，18:30~20:50。喵腾很努力，进步也很快，吊球也找到些许感觉了，呵呵，希望能够打得更好。
