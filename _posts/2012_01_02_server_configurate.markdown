@@ -23,6 +23,8 @@ categories:
 
   > mysqladmin -u root password xxx
 
+  给用户权限 grant all privileges on database.* to user@localhost identified by "password";
+
 * 安装邮件服务
 
   > yaourt postfix
