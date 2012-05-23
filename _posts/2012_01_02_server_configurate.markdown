@@ -25,6 +25,9 @@ categories:
 
   给用户权限 grant all privileges on database.* to user@localhost identified by "password";
 
+  数据库备份导入
+  > mysql -u root -p database_name < backup.sql
+
 * 安装邮件服务
 
   > yaourt postfix
@@ -53,5 +56,16 @@ categories:
 * 自动备份
 
   > gem install astrails-safe
+
+update:
+
+* 解决linode下使用pacman更新系统发生的问题
+
+  error: failed to commit transaction (conflicting files)
+  filesystem: /etc/mtab exists in filesystem
+  Errors occurred, no packages were upgraded.
+
+  输入:
+    pacman -S filesystem --force
 
 END
