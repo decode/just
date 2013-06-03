@@ -25,6 +25,9 @@ categories:
 
   给用户权限 grant all privileges on database.* to user@localhost identified by "password";
 
+  数据库备份导入
+  > mysql -u root -p database_name < backup.sql
+
 * 安装邮件服务
 
   > yaourt postfix
@@ -53,5 +56,35 @@ categories:
 * 自动备份
 
   > gem install astrails-safe
+
+update:
+
+* 解决linode下使用pacman更新系统发生的问题
+
+  error: failed to commit transaction (conflicting files)
+  filesystem: /etc/mtab exists in filesystem
+  Errors occurred, no packages were upgraded.
+
+  输入:
+    pacman -S filesystem --force
+
+update 2:
+
+* ubuntu8.04下的一些配置
+
+  bundle install下mysql gem出错
+  尝试解决: aptitude install libmysqlclient16-dev
+
+  rmagick gem安装出错
+  下载imagemagick源代码,编译
+
+  sqlite3 gem安装出错
+  下载源代码编译
+
+  crontab修改默认editor
+  在.bashrc里加入 export EDITOR=vim
+
+  passenger无法找到bundle install后的gems
+  运行 bundle --deployment
 
 END
