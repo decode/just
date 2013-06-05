@@ -10,6 +10,9 @@ categories:
   第一歩就是把原装的centos换成ubuntu10.04,需要几分鈡的时间
 
 * 安装软件及环境
+  > timezone
+
+    dpkg-reconfigure tzdata
 
   > git
 
